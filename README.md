@@ -50,18 +50,12 @@ Each response from a model is manually reviewed and classified using a simple bu
 *   **1 Point (Incomplete / Partially Correct):** The response captures the main idea but is missing key elements, contains minor inaccuracies, or fails to address a sub-question.
 *   **0 Points (Incorrect):** The response is factually wrong, irrelevant to the question, or contains a dangerous hallucination.
 
-### 2. Consistency Analysis
-
-A unique aspect of this evaluation is the focus on **model consistency**. The same tests are run multiple times (as seen in the `Teste_1` and `Teste_2` folders) to answer a critical question: **Does the model provide the same correct answer every time?**
-
-This analysis has revealed that even top-performing models can exhibit minor variations in wording, detail, or structure across identical runs. Critically, these slight changes can sometimes be enough to shift an evaluation from **Correct (2 points)** to **Incomplete (1 point)**, exposing a lack of robustness and coherence. This "semantic instability" is a key risk factor when considering a model for reliable use.
-
-A comparative analysis table is used to visualize this consistency. It provides a color-coded matrix comparing the evaluation of answers between `Test Run 1` and `Test Run 2` for each model across all question categories.
 <img width="1851" height="835" alt="image" src="https://github.com/user-attachments/assets/1b7f4ce2-6c5a-498d-8f64-4733d2d8cb80" />
 <img width="1843" height="926" alt="image" src="https://github.com/user-attachments/assets/0fb04dc4-7f94-4d10-a2f7-440c210580f7" />
 <img width="1846" height="890" alt="image" src="https://github.com/user-attachments/assets/f13ea925-7d97-4eab-a2a9-ac53904c15a2" />
 
-### Consistency Acrros the 3 Tests Table
+
+### 2. Consistency Analysis: Consistency Acrros the 3 Tests Table
 
 Beyond raw accuracy scores, a crucial part of this project is the **consistency analysis**. The same set of tests were run multiple times to answer a vital question: *Can a model be trusted to provide the same correct answer every time?*
 

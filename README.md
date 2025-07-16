@@ -45,7 +45,7 @@ The initial tests on over 20 models produced several key insights. The evaluatio
 *(You can insert your results charts here in the README for visual reference)*
 
 #### Key Takeaways:
-1.  **Top Performers:** `qwen:8b` and `granite3:8b` consistently achieved the highest scores, demonstrating both accurate and reliable knowledge. `granite3-dense:8b` also performed exceptionally well.
+1.  **Top Performers:** `qwen3:8b`, `granite3-dense:8b` and  `granite3.2:8b` consistently achieved the highest scores, demonstrating both accurate and reliable knowledge. `granite3-dense:8b` also performed exceptionally well.
 2.  **Consistency is a Critical Metric:** Some models, like `llama3:8b`, achieved a good score but were highly inconsistent, providing correct answers in one run and failing in the next. This highlights the risk of relying on models that are not robustly predictable.
 3.  **Critical Factual Errors in Mid-Tier Models:** Some popular models showed surprising knowledge gaps. For instance, `mistral:7b` incorrectly identified CWE-79 (Cross-Site Scripting) as SQL Injection, a fundamental error that would be dangerous in a production setting.
 4.  **Model Size vs. Architecture:** While there is a general trend of larger models (7B/8B parameters) outperforming smaller ones, the results clearly show that model architecture and training are just as important. A well-tuned 7B model often outperformed a less-focused 8B model.

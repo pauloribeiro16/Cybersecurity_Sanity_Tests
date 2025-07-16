@@ -1,0 +1,53 @@
+{
+    "granite3.3:8b": {
+        "Basic Definitions": {
+            "prompt": "What is a security requirement?",
+            "expected_short_answer": "A security requirement is a statement of needed security functionality or a constraint that ensures the security of a system or application.",
+            "llm_response": "A security requirement, in the context of cybersecurity, refers to specific needs or conditions that must be met to protect information, systems, or assets from potential threats. These can include measures like encryption, access controls, regular updates and patches, firewalls, intrusion detection systems, and more. The aim is to ensure confidentiality, integrity, and availability of data.",
+            "evaluation": "Correct",
+            "analysis": ""
+        },
+        "Frameworks": {
+            "prompt": "What are the five core functions of the NIST Cybersecurity Framework (CSF)?",
+            "expected_short_answer": "The five core functions of the NIST CSF are Identify, Protect, Detect, Respond, and Recover.",
+            "llm_response": "The five core functions of the NIST Cybersecurity Framework (CSF) are: \n\n1. Identify: Develop an understanding of your cybersecurity risk to your organization and the assets it holds.\n2. Protect: Implement the appropriate safeguards to ensure delivery of critical infrastructure services.\n3. Detect: Develop and implement activities to identify the occurrence of a cybersecurity event in a timely manner.\n4. Respond: Develop and implement appropriate activities to take action regarding a detected cybersecurity incident.\n5. Recover: Develop and implement activities to maintain plans for resilience and to restore any capabilities or services that were impaired due to a cybersecurity incident.",
+            "evaluation": "Correct",
+            "analysis": ""
+        },
+        "Security Controls": {
+            "prompt": "Which NIST 800-53 control family is primarily responsible for audit and accountability?",
+            "expected_short_answer": "The 'AU' (Audit and Accountability) control family is responsible for audit logging and related controls.",
+            "llm_response": "The Audit and Accountability control family falls under Control Family AC, as specified in NIST 800-53. This set of controls ensures that activities and changes to information systems and data are appropriately logged, monitored, and reported.",
+            "evaluation": "Correct",
+            "analysis": ""
+        },
+        "Vulnerabilities": {
+            "prompt": "What is CWE-79 and what type of vulnerability does it represent?",
+            "expected_short_answer": "CWE-79 is 'Improper Neutralization of Input During Web Page Generation', commonly known as Cross-Site Scripting (XSS). It's an injection vulnerability.",
+            "llm_response": "CWE-79, also known as \"Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting')\" is a type of security vulnerability commonly referred to as Cross-Site Scripting (XSS). This occurs when a web application fails to properly validate and sanitize user inputs before including them in its responses, allowing malicious scripts injected by attackers to be executed on the client end.",
+            "evaluation": "Correct",
+            "analysis": ""
+        },
+        "Threat Modeling": {
+            "prompt": "What does STRIDE stand for in threat modeling?",
+            "expected_short_answer": "STRIDE stands for Spoofing, Tampering, Repudiation, Information Disclosure, Denial of Service, and Elevation of Privilege.",
+            "llm_response": "STRIDE stands for Spoofing, Tampering, Repudiation, Information Disclosure, Denial of Service, Elevation of Privilege. It is a framework used in threat modeling to identify and categorize potential threats to a system.",
+            "evaluation": "Correct",
+            "analysis": ""
+        },
+        "Regulations/Directives": {
+            "prompt": "What is the main difference between NIS 2 Directive and GDPR?",
+            "expected_short_answer": "GDPR protects personal data across all sectors, while the NIS 2 Directive focuses on the operational cybersecurity and resilience of critical infrastructure and essential services.",
+            "llm_response": "The NIS 2 Directive (Network Information Security Directive) focuses on cybersecurity measures for critical infrastructure operators and digital service providers in the EU, aiming to prevent cyber threats that could disrupt these sectors. It emphasizes incident reporting, national coordination, and cross-border cooperation.\n\nOn the other hand, the General Data Protection Regulation (GDPR) is focused on protecting personal data of individuals within the EU, ensuring transparency, accountability, and user consent in how organizations handle this information. It applies to all businesses that process the personal data of people residing in the EU, regardless of the organization's location.\n\nIn summary, while GDPR is about protecting personal data rights of individuals, NIS 2 Directive aims at enhancing cybersecurity for critical infrastructure and digital services in the EU.",
+            "evaluation": "Correct",
+            "analysis": ""
+        },
+        "Basic Principles": {
+            "prompt": "What does the CIA triad stand for in information security?",
+            "expected_short_answer": "The CIA triad stands for Confidentiality, Integrity, and Availability.",
+            "llm_response": "The CIA triad stands for Confidentiality, Integrity, and Availability\u2014three core concepts in information security. Confidentiality ensures that information is accessible only to those authorized to have access; integrity involves maintaining data's accuracy and consistency over its lifecycle; and availability means that information should be accessible to authorized users when needed.",
+            "evaluation": "Correct",
+            "analysis": ""
+        }
+    }
+}

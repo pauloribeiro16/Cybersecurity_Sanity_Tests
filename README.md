@@ -61,22 +61,13 @@ A comparative analysis table is used to visualize this consistency. It provides 
 <img width="1843" height="926" alt="image" src="https://github.com/user-attachments/assets/0fb04dc4-7f94-4d10-a2f7-440c210580f7" />
 <img width="1846" height="890" alt="image" src="https://github.com/user-attachments/assets/f13ea925-7d97-4eab-a2a9-ac53904c15a2" />
 
-##Consistency Acrros the 3 Tests Table
-Of course. This is an excellent point, and adding this level of detailed analysis to your `README.md` will make the value of your project crystal clear. It elevates it from a simple collection of results to a genuine study on model behavior.
-
-Here is a new, detailed section for your `README.md`. I've incorporated your specific observations from the consistency chart and expanded on them to articulate the "why" behind the results.
-
-You can add this section under the `Initial Findings & Analysis` part of the `README.md` I provided earlier.
-
----
-
-### Consistency Analysis
+### Consistency Acrros the 3 Tests Table
 
 Beyond raw accuracy scores, a crucial part of this project is the **consistency analysis**. The same set of tests were run multiple times to answer a vital question: *Can a model be trusted to provide the same correct answer every time?*
 
 The following comparative analysis chart, which visualizes the evaluation of answers between two identical test runs, reveals profound differences in model behavior. A green "Equal" cell means the model's response received the same evaluation in both tests, indicating consistency. A red "Different" cell signifies that the model's response changed enough between runs to alter its score (e.g., from "Correct" to "Incomplete"), exposing a lack of coherence.
 
-*(Here you should insert the image of your green and red consistency table)*
+<img width="1620" height="869" alt="image" src="https://github.com/user-attachments/assets/8feba078-73ce-447f-8f3e-245dd4e4fcce" />
 
 This analysis allows us to classify the models into distinct behavioral groups:
 
@@ -106,7 +97,6 @@ This is a subtle but important category of models that are consistent, but for t
 ### Final Conclusion on Consistency
 
 For a high-stakes domain like cybersecurity, **consistency is arguably more important than peak performance**. An inconsistent model that gives a brilliant answer one time and a dangerously wrong one the next is a liability. This multi-run evaluation methodology is therefore central to the project, as it effectively filters out unreliable models and identifies those that are truly robust.
-<img width="1620" height="869" alt="image" src="https://github.com/user-attachments/assets/8feba078-73ce-447f-8f3e-245dd4e4fcce" />
 
 ---
 

@@ -38,6 +38,38 @@ This phase narrows the focus to the top-performing models from the previous test
 
 ---
 
+## Detailed Evaluation Process
+
+A core component of this project is the rigorous and multi-layered evaluation process applied to the model outputs.
+
+### 1. Output Classification & Scoring
+
+Each response from a model is manually reviewed and classified using a simple but effective scoring system:
+
+*   **2 Points (Correct):** The response is factually accurate, complete, and directly addresses all parts of the user prompt.
+*   **1 Point (Incomplete / Partially Correct):** The response captures the main idea but is missing key elements, contains minor inaccuracies, or fails to address a sub-question.
+*   **0 Points (Incorrect):** The response is factually wrong, irrelevant to the question, or contains a dangerous hallucination.
+
+### 2. Consistency Analysis
+
+A unique aspect of this evaluation is the focus on **model consistency**. The same tests are run multiple times (as seen in the `Teste_1` and `Teste_2` folders) to answer a critical question: **Does the model provide the same correct answer every time?**
+
+This analysis has revealed that even top-performing models can exhibit minor variations in wording, detail, or structure across identical runs. Critically, these slight changes can sometimes be enough to shift an evaluation from **Correct (2 points)** to **Incomplete (1 point)**, exposing a lack of robustness and coherence. This "semantic instability" is a key risk factor when considering a model for reliable use.
+
+A comparative analysis table is used to visualize this consistency. It provides a color-coded matrix comparing the evaluation of answers between `Test Run 1` and `Test Run 2` for each model across all question categories.
+
+*(You can insert your consistency table image here. This is the one with the green and red cells.)*
+
+---
+
+## Repository Structure & Evaluation Artifacts
+
+The raw data and analysis for each test phase are stored in dedicated folders.
+
+*   **`Teste_1/`,  `Teste_2/` and `Teste_3/`:** These folders contain the raw log files from the initial "Normal" and "Reverse" test runs. They also include the Excel spreadsheets where the detailed scoring (0, 1, or 2 points) for each model's response is recorded, along with the final consistency comparison table.
+
+---
+
 ## Initial Findings & Analysis (Phases 1 & 2)
 
 The initial tests on over 20 models produced several key insights. The evaluation was not just about getting the right answer, but also about the consistency of the answers across multiple runs.

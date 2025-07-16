@@ -61,40 +61,9 @@ A comparative analysis table is used to visualize this consistency. It provides 
 <img width="1843" height="926" alt="image" src="https://github.com/user-attachments/assets/0fb04dc4-7f94-4d10-a2f7-440c210580f7" />
 <img width="1846" height="890" alt="image" src="https://github.com/user-attachments/assets/f13ea925-7d97-4eab-a2a9-ac53904c15a2" />
 
-Consistency Table
+Consistency Acrros the 3 Tests Table
 
-Model	Basic Definitions		Frameworks		Security Controls		Vulnerabilities		Threat Modeling		Regulations/Directives		Basic Principles	
-Perguntas	Normal	Reverse	Normal	Reverse	Normal	Reverse	Normal	Reverse	Normal	Reverse	Normal	Reverse	Normal	Reverse
-deepseek-r1:1.5b	Equal	Equal	Equal	Equal	Equal	Equal	Equal	Equal	Equal	Equal	Equal	Equal	Different	Different
-deepseek-r1:7b	Equal	Different	Equal	Different	Equal	Equal	Equal	Different	Different	Equal	Different	Equal	Different	Equal
-gemma3:1b	Equal	Different	Equal	Different	Different	Equal	Different	Equal	Equal	Equal	Different	Equal	Equal	Different
-gemma3n:e2b	Equal	Equal	Equal	Different	Equal	Different	Different	Equal	Different	Equal	Equal	Equal	Equal	Different
-gemma3:4b	Equal	Equal	Equal	Equal	Different	Different	Different	Equal	Different	Different	Equal	Equal	Equal	Equal
-granite3-dense:2b	Equal	Equal	Equal	Equal	Different	Different	Equal	Equal	Different	Equal	Equal	Different	Equal	Equal
-granite3-dense:8b	Equal	Equal	Equal	Equal	Different	Equal	Equal	Equal	Equal	Different	Equal	Equal	Equal	Equal
-granite3.2:2b	Equal	Different	Equal	Different	Different	Different	Equal	Different	Equal	Different	Equal	Equal	Equal	Different
-granite3.2:8b	Equal	Equal	Equal	Different	Different	Equal	Equal	Equal	Equal	Equal	Equal	Equal	Equal	Equal
-llama3.2:1b	Equal	Different	Equal	Different	Different	Equal	Equal	Different	Equal	Equal	Different	Different	Equal	Different
-llama3.2:3b	Equal	Different	Equal	Equal	Different	Equal	Equal	Different	Different	Equal	Equal	Equal	Equal	Equal
-llama3:8b	Equal	Equal	Equal	Different	Different	Different	Different	Different	Different	Different	Equal	Equal	Equal	Equal
-mistral:7b	Equal	Equal	Equal	Different	Different	Different	Different	Different	Different	Different	Equal	Equal	Equal	Equal
-phi3:3.8b	Equal	Different	Equal	Equal	Different	Different	Equal	Different	Equal	Equal	Different	Different	Equal	Equal
-phi4-mini-reasoning:3.8b	Equal	Equal	Equal	Equal	Equal	Equal	Equal	Equal	Different	Different	Equal	Different	Different	Equal
-phi4-mini:3.8b	Equal	Equal	Different	Different	Different	Different	Different	Different	Different	Different	Equal	Different	Equal	Equal
-qwen2.5:0.5b	Equal	Different	Different	Different	Equal	Equal	Equal	Different	Equal	Equal	Equal	Different	Different	Equal
-qwen2.5:1.5b	Equal	Equal	Equal	Equal	Equal	Equal	Equal	Equal	Different	Equal	Equal	Different	Equal	Different
-qwen2.5:3b	Equal	Equal	Equal	Equal	Different	Equal	Different	Different	Different	Different	Equal	Different	Equal	Equal
-qwen2.5:7b	Equal	Equal	Different	Different	Equal	Equal	Equal	Equal	Equal	Equal	Equal	Equal	Equal	Equal
-qwen3:0.6b	Equal	Equal	Equal	Different	Equal	Different	Equal	Different	Equal	Equal	Equal	Equal	Different	Different
-qwen3:1.7b	Equal	Equal	Different	Different	Different	Equal	Different	Equal	Different	Different	Equal	Equal	Different	Different
-qwen3:4b	Equal	Equal	Equal	Equal	Different	Different	Equal	Different	Different	Equal	Equal	Equal	Equal	Equal
-qwen3:8b	Equal	Equal	Equal	Equal	Equal	Equal	Equal	Equal	Different	Equal	Equal	Equal	Equal	Equal
-lily_cyber:latest	Equal	Equal	Equal	Different	Different	Equal	Equal	Different	Different	Different	Different	Equal	Equal	Equal
 <img width="1620" height="869" alt="image" src="https://github.com/user-attachments/assets/8feba078-73ce-447f-8f3e-245dd4e4fcce" />
-
-
-
-
 
 ---
 

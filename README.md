@@ -77,7 +77,7 @@ These models are defined by their reliability.
 This group contains models that might achieve a high score in one run but fail to replicate it. They are unpredictable and therefore untrustworthy.
 *   **Prime Examples:** `llama3:8b`, `mistral:7b`, `phi3:3.8b`.
 *   **Behavior:** These models have a high number of red cells. They are the "turncoats" (`vira casacas`) of the evaluation. Their inconsistency stems from a phenomenon we can call the **"Keyword Lottery."**
-    *   In one run, a model's probabilistic text generation might "get lucky" and happen to include specific keywords or phrases that satisfy the evaluation criteria, earning it a "Correct" or "Incomplete" score or simply performce drops.
+    *   In one run, a model's probabilistic text generation might "get lucky" and happen to include specific keywords or phrases that satisfy the evaluation criteria, earning it a "Correct" or "Incomplete" score.
     *   In the next run, a slight, almost random change in sentence structure or word choice can cause those same keywords to be omitted, dropping the evaluation to "Incomplete."
 *   **Implication:** A correct answer from these models cannot be fully trusted as a sign of genuine understanding. It might be a one-time fluke. For any serious application, this level of semantic instability is a critical risk.
 

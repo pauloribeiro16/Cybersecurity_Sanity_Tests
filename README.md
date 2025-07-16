@@ -61,8 +61,51 @@ A comparative analysis table is used to visualize this consistency. It provides 
 <img width="1843" height="926" alt="image" src="https://github.com/user-attachments/assets/0fb04dc4-7f94-4d10-a2f7-440c210580f7" />
 <img width="1846" height="890" alt="image" src="https://github.com/user-attachments/assets/f13ea925-7d97-4eab-a2a9-ac53904c15a2" />
 
-Consistency Acrros the 3 Tests Table
+##Consistency Acrros the 3 Tests Table
+Of course. This is an excellent point, and adding this level of detailed analysis to your `README.md` will make the value of your project crystal clear. It elevates it from a simple collection of results to a genuine study on model behavior.
 
+Here is a new, detailed section for your `README.md`. I've incorporated your specific observations from the consistency chart and expanded on them to articulate the "why" behind the results.
+
+You can add this section under the `Initial Findings & Analysis` part of the `README.md` I provided earlier.
+
+---
+
+### Consistency Analysis
+
+Beyond raw accuracy scores, a crucial part of this project is the **consistency analysis**. The same set of tests were run multiple times to answer a vital question: *Can a model be trusted to provide the same correct answer every time?*
+
+The following comparative analysis chart, which visualizes the evaluation of answers between two identical test runs, reveals profound differences in model behavior. A green "Equal" cell means the model's response received the same evaluation in both tests, indicating consistency. A red "Different" cell signifies that the model's response changed enough between runs to alter its score (e.g., from "Correct" to "Incomplete"), exposing a lack of coherence.
+
+*(Here you should insert the image of your green and red consistency table)*
+
+This analysis allows us to classify the models into distinct behavioral groups:
+
+#### 1. The Consistent Leaders (The "Green Zone")
+
+These models are defined by their reliability.
+*   **Prime Examples:** `qwen:8b`, `granite3:8b`, `granite3-dense:8b`.
+*   **Behavior:** As the chart shows, these models are overwhelmingly green. They don't just provide correct answers; they provide the *same* high-quality, correct answers reliably across multiple runs. Their responses are structurally similar and contain the necessary information every time.
+*   **Implication:** These models exhibit robust and predictable knowledge. They are the only candidates suitable for dependable, professional use where the same query must yield the same correct outcome.
+
+#### 2. The Inconsistent "Turncoats" (The "Red Zone")
+
+This group contains models that might achieve a high score in one run but fail to replicate it. They are unpredictable and therefore untrustworthy.
+*   **Prime Examples:** `llama3:8b`, `mistral:7b`, `phi3:3.8b`.
+*   **Behavior:** These models have a high number of red cells. They are the "turncoats" (`vira casacas`) of the evaluation. Their inconsistency stems from a phenomenon we can call the **"Keyword Lottery."**
+    *   In one run, a model's probabilistic text generation might "get lucky" and happen to include specific keywords or phrases that satisfy the evaluation criteria, earning it a "Correct" score.
+    *   In the next run, a slight, almost random change in sentence structure or word choice can cause those same keywords to be omitted, dropping the evaluation to "Incomplete."
+*   **Implication:** A correct answer from these models cannot be fully trusted as a sign of genuine understanding. It might be a one-time fluke. For any serious application, this level of semantic instability is a critical risk.
+
+#### 3. The Consistently Underperforming
+
+This is a subtle but important category of models that are consistent, but for the wrong reason.
+*   **Prime Examples:** `deepseek-r1:1.5b`, `qwen2.5:0.5b`.
+*   **Behavior:** Some of these smaller models may show green cells, but their overall scores remain low. This indicates that they are *consistently wrong* or *consistently incomplete*. They reliably provide the same poor-quality answer every time.
+*   **Implication:** This highlights that consistency is a necessary, but not sufficient, condition for a good model. Correctness and consistency must exist together.
+
+### Final Conclusion on Consistency
+
+For a high-stakes domain like cybersecurity, **consistency is arguably more important than peak performance**. An inconsistent model that gives a brilliant answer one time and a dangerously wrong one the next is a liability. This multi-run evaluation methodology is therefore central to the project, as it effectively filters out unreliable models and identifies those that are truly robust.
 <img width="1620" height="869" alt="image" src="https://github.com/user-attachments/assets/8feba078-73ce-447f-8f3e-245dd4e4fcce" />
 
 ---
